@@ -1,0 +1,175 @@
+body {
+  display: flex;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: hsl(229, 6%, 66%);
+}
+
+.puslapis {
+  max-width: 1440px;
+  height: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.neryskiH {
+  font-size: 50px;
+  font-weight: 200;
+  color: hsl(234, 12%, 34%);
+  margin: 80px 0 0 0;
+}
+
+.ryskiH {
+  font-size: 50px;
+  font-weight: 400;
+  color: hsl(234, 12%, 34%);
+  margin: 0 0 20px 0;
+  line-height: 0.9;
+}
+
+.tekstas {
+  max-width: 550px;
+  height: auto;
+  color: hsl(229, 6%, 66%);
+  align-self: center;
+  flex-basis: 150px;
+}
+
+.korteliuKonteineris {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.korteliuKonteineris h4 {
+  color: hsl(234, 12%, 34%);
+  font-size: 20px;
+  margin-top: 0;
+}
+
+.korteliuKonteineris p {
+  width: 270px;
+  font-size: 13px;
+  color: #a3c2c2;
+  flex-basis: 140px;
+  margin-top: 0;
+}
+
+.kortele1, .kortele2, .kortele3, .kortele4 {
+  width: 310px;
+  height: 200px;
+  margin: 15px;
+  border-radius: 7px;
+  box-shadow: 0 15px 20px #d1e0e0;
+  text-align: left;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.kortele1 {
+  border-top: 7px solid hsl(180, 62%, 55%);
+}
+
+.kortele2 {
+  border-top: 7px solid hsl(0, 78%, 62%);
+}
+
+.kortele3 {
+  border-top: 7px solid hsl(212, 86%, 64%);
+}
+
+.kortele4 {
+  border-top: 7px solid hsl(34, 97%, 64%);
+}
+
+.vidurinesKorteles {
+  width: 400px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.iconSupervisor, .iconTeamBuilder, .iconCalculator, .iconKarma {
+  width: 60px;
+  height: auto;
+  align-self: flex-end;
+}
+
+/* tablet1 */
+
+@media (max-width: 1232px) {
+  .kortele1 {
+    order: 1;
+  }
+
+  .kortele3 {
+    order: 2;
+  }
+
+  .vidurinesKorteles {
+    order: 3;
+  }
+
+  .korteliuKonteineris {
+    width: 800px;
+    flex-flow: column wrap;
+    height: 595px;
+    align-content: space-around;
+  }
+}
+
+/* tablet2 */
+
+@media (max-width: 900px) {
+
+  .kortele1 {
+    order: 1;
+  }
+
+  .vidurinesKorteles {
+    order: 2;
+  }
+
+  .kortele3 {
+    order: 3;
+  }
+
+  .vidurinesKorteles {
+    width: auto;
+    flex-direction: row;
+  }
+
+  .korteliuKonteineris {
+    width: auto;
+    height: auto;
+    flex-flow: column nowrap;
+  }
+}
+
+/* phone */
+
+@media (max-width: 800px) {
+  .vidurinesKorteles {
+    flex-direction: column;
+  }
+
+  .neryskiH {
+    font-size: 30px;
+  }
+
+  .ryskiH {
+    font-size: 30px;
+  }
+
+  .tekstas {
+    max-width: 400px;
+  }
+}
